@@ -1,0 +1,31 @@
+{
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:build": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
+    "tw:watch": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css -w",
+    "sass:build": "sass style.scss dist/style.css --no-source-map --style=compressed",
+    "sass:watch": "sass style.scss dist/style.css --watch",
+    "build": "npm-run-all tw:build sass:build",
+    "serve": "vite",
+    "site:build": "vite build",
+    "site:preview": "vite preview",
+    "dev": "npm-run-all -p tw:watch sass:watch serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.6",
+    "sass": "^1.97.3",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.1"
+  }
+}
