@@ -7,25 +7,32 @@
     <link rel="stylesheet" href="dist/tailwind.css">
     <link rel="stylesheet" href="dist/style.css">
 </head>
-<body>
-    <div class="outside-box p-6 bg-white shadow-md max-w-5xl mx-auto mt-10">
-        <div class="inside-box">
-            <div class="flex">
-                <div class="w-1/4 bg-gray-200 p-4">
-                    <h2 class="text-xl font-bold mb-4">Sidebar</h2>
-                    <ul>
-                        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 1</a></li>
-                        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 2</a></li>
-                        <li class="mb-2"><a href="#" class="text-blue-500 hover:underline">Link 3</a></li>
-                    </ul>
-                </div>
-                <div class="w-3/4 p-4">
-                    <h1 class="text-3xl font-bold mb-6">Main Content Area</h1>
-                    <p class="mb-4">This is the main content area. You can add your content here.</p>
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Click Me</button>
-                </div>
-            </div>
+<body class="min-h-screen bg-[url('/images/netflix-background.jpg')] bg-cover bg-center bg-no-repeat bg-fixed text-white">
+  <div class="min-h-screen bg-black/60">
+    <div class="mx-auto max-w-6xl px-6 py-10">
+      <div class="rounded-2xl border border-white/15 bg-black shadow-2xl">
+        <div class="innerbobble flex gap-6 rounded-xl bg-white/80 opacity-0 text-gray-900">
         </div>
+        <div class="flex gap-6">
+          <aside class="left-bar backdrop-blur-lg bg-white/70 col-span-12 md:col-span-1 rounded-xl border border-gray-200 p-6 shadow-sm visible text-gray-900">
+            <ul class="space-y-2 text-sm">
+              <li><a href="#" class="text-black-600 hover:text-blue-800 underline-offset-4 hover:underline">1</a></li>
+              <li><a href="#" class="text-black-600 hover:text-blue-800 underline-offset-4 hover:underline">2</a></li>
+              <li><a href="#" class="text-black-600 hover:text-blue-800 underline-offset-4 hover:underline">3</a></li>
+            </ul>
+          </aside>
+          <main class="right-bar backdrop-blur-lg bg-white/70 col-span-12 md:col-span-11 rounded-xl border border-gray-200 p-6 shadow-sm visible text-gray-900">
+            <h1 class="text-3xl font-bold mb-4">Netflix</h1>
+            <div class="left-right-bar flex flex-col space-y-2 mb-6">
+                <a href="#" class="browse text-black-600 hover:text-blue-800">browse</a>
+                <a href="#" class="wishlist text-black-600 hover:text-blue-800">wishlist</a>
+                <a href="#" class="comingsoon text-black-600 hover:text-blue-800">coming soon</a>   
+            </div>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Click Me</button>
+          </main>
+        </div>
+      </div>
     </div>
+  </div>
 </body>
 </html>

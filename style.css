@@ -1,8 +1,16 @@
 /* Custom SCSS styles (Tailwind v4 uses CSS-first approach, @apply no longer supported) */
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+li {
+  text-decoration: none;
+}
+link {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.left-bar, .right-bar {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
