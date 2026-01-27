@@ -13,4 +13,7 @@ link {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
+.my-element {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 /*# sourceMappingURL=style.css.map */
