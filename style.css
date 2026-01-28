@@ -1,0 +1,36 @@
+/* Custom CSS styles - loaded AFTER Tailwind to override */
+
+.iconsbar a:hover {
+	animation: iconsbar-shake 0.35s ease-in-out;
+}
+
+@keyframes iconsbar-shake {
+	0% { transform: translateX(0); }
+	20% { transform: translateX(-2px); }
+	40% { transform: translateX(2px); }
+	60% { transform: translateX(-2px); }
+	80% { transform: translateX(2px); }
+	100% { transform: translateX(0); }
+}
+/* Scrollbar styling for .pictures */
+.pictures::-webkit-scrollbar {
+	width: 8px;
+}
+
+.pictures::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.pictures::-webkit-scrollbar-thumb {
+	background: #991b1b;
+	border-radius: 4px;
+}
+
+.pictures::-webkit-scrollbar-thumb:hover {
+	background: #7f1d1d;
+}
+
+.pictures {
+	scrollbar-color: #991b1b transparent;
+	scrollbar-width: thin;
+}
