@@ -34,3 +34,26 @@
 	scrollbar-color: #991b1b transparent;
 	scrollbar-width: thin;
 }
+
+/* Scrollbar styling for .featured-trailers */
+.featured-trailers::-webkit-scrollbar {
+	width: 8px;
+}
+
+.featured-trailers::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.featured-trailers::-webkit-scrollbar-thumb {
+	background: #991b1b;
+	border-radius: 4px;
+}
+
+.featured-trailers::-webkit-scrollbar-thumb:hover {
+	background: #7f1d1d;
+}
+
+.featured-trailers {
+	scrollbar-color: #991b1b transparent;
+	scrollbar-width: thin;
+}
